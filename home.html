@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Blooms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Handmade Blooms</h1>
+        <p>Eco-Friendly Handcrafted Flowers</p>
+    </header>
+
+    <nav id="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Shop</a>
+        <a href="#">Custom Orders</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="banner">
+        <img src="C:\Users\Khyte Leis\Downloads\bg1.jpg" alt="Flower Banner">
+        <div class="banner-text">
+            <h1>Welcome to Handmade Blooms</h1>
+        </div>
+    </div>
+
+    <section>
+        <h2>Our Featured Flowers</h2>
+        <div class="products">
+            <div class="product">
+                <img src="C:\Users\Khyte Leis\Downloads\rose.jpg" alt="Flower 1">
+                <h3>Rose</h3>
+                <p>Beautiful handcrafted rose bouquet made from fuzzy wires.</p>
+            </div>
+            <div class="product">
+                <img src= "C:\Users\Khyte Leis\Downloads\sunflower.jpg" alt="Flower 2">
+                <h3>Sunflower</h3>
+                <p>Bright and cheerful sunflowers, perfect for any occasion.</p>
+            </div>
+            <div class="product">
+                <img src="C:\Users\Khyte Leis\Downloads\daisy.jpg" alt="Flower 3">
+                <h3>Daisy</h3>
+                <p>Simple and sweet daisy blooms for home decor and gifts.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Handmade Blooms | Follow us on 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            const navbar = document.getElementById("navbar");
+            if (window.pageYOffset > navbar.offsetTop) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        };
+    </script>
+</body>
+</html>
