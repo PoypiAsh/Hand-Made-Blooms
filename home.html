@@ -4,66 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handmade Blooms</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Connects to the CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Handmade Blooms</h1>
-        <p>Eco-Friendly Handcrafted Flowers</p>
-    </header>
 
-    <nav id="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Shop</a>
-        <a href="#">Custom Orders</a>
-        <a href="#">Contact</a>
-    </nav>
+    <!-- CONTAINER 1: Navigation Bar -->
+    <div id="navbar" class="navbar-container">
+        <div class="nav-wrapper">
+            <div class="logo">Handmade Blooms</div>
+            
+            <!-- Mobile Menu Icon (Hamburger) -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span>&#9776;</span>
+            </div>
 
-    <div class="banner">
-        <img src="images/bg1.jpg" alt="Flower Banner">
-        <div class="banner-text">
-            <h1>Welcome to Handmade Blooms</h1>
+            <!-- Navigation Links -->
+            <div class="nav-links" id="navLinks">
+                <a href="#home" onclick="closeMenu()">Home</a>
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#shop" onclick="closeMenu()">Shop</a>
+                <a href="#custom" onclick="closeMenu()">Custom Orders</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+            </div>
         </div>
     </div>
 
-    <section>
-        <h2>Our Featured Flowers</h2>
-        <div class="products">
-            <div class="product">
-                <img src="images/rose.jpg" alt="Flower 1">
-                <h3>Rose</h3>
-                <p>Beautiful handcrafted rose bouquet made from fuzzy wires.</p>
-            </div>
-            <div class="product">
-                <img src= "images/sunflower.jpg" alt="Flower 2">
-                <h3>Sunflower</h3>
-                <p>Bright and cheerful sunflowers, perfect for any occasion.</p>
-            </div>
-            <div class="product">
-                <img src="images/daisy.jpg" alt="Flower 3">
-                <h3>Daisy</h3>
-                <p>Simple and sweet daisy blooms for home decor and gifts.</p>
+    <!-- CONTAINER 2: Home / Banner -->
+    <div id="home" class="main-container banner-container">
+        <div class="banner-image">
+            <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/bg1.jpg?raw=true" alt="Flower Background">
+        </div>
+        <div class="banner-overlay">
+            <div class="banner-text">
+                <h1>Handmade Blooms</h1>
+                <p>Eco-Friendly Handcrafted Flowers</p>
+                <div class="btn-container">
+                    <a href="#shop" class="btn">Shop Collection</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <p>© 2025 Handmade Blooms | Follow us on 
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a>
-        </p>
-    </footer>
+    <!-- CONTAINER 3: About Us -->
+    <div id="about" class="main-container white-bg">
+        <div class="content-wrapper">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="split-layout">
+                <div class="text-block">
+                    <p>At Handmade Blooms, we believe flowers should last forever. Our fuzzy wire creations are meticulously crafted by hand to bring color to your life without the environmental impact of cut flowers.</p>
+                </div>
+                <div class="image-block">
+                    <img src="img\andrew-small-EfhCUc_fjrU-unsplash.jpg" alt="Crafting">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        window.onscroll = function() {
-            const navbar = document.getElementById("navbar");
-            if (window.pageYOffset > navbar.offsetTop) {
-                navbar.classList.add("sticky");
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        };
-    </script>
+    <!-- CONTAINER 4: Shop -->
+    <div id="shop" class="main-container pink-bg">
+        <div class="content-wrapper">
+            <div class="section-title">
+                <h2>Shop Now</h2>
+            </div>
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/rose.jpg?raw=true" alt="Rose">
+                    </div>
+                    <div class="card-body">
+                        <h3>Rose</h3>
+                        <p>&#x20B1;150.00</p>
+                        <div class="btn-small">Buy Now</div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/sunflower.jpg?raw=true" alt="Sunflower">
+                    </div>
+                    <div class="card-body">
+                        <h3>Sunflower</h3>
+                        <p>&#x20B1;180.00</p>
+                        <div class="btn-small">Buy Now</div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/daisy.jpg?raw=true" alt="Daisy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Daisy</h3>
+                        <p>&#x20B1;180.00</p>
+                        <div class="btn-small">Buy Now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTAINER 5: Custom Orders -->
+    <div id="custom" class="main-container white-bg">
+        <div class="content-wrapper">
+            <div class="section-title">
+                <h2>Custom Orders</h2>
+                <p>Build your own bouquet</p>
+            </div>
+            <div class="form-container">
+                <form onsubmit="event.preventDefault(); alert('Request sent!');">
+                    <div class="form-group">
+                        <label>Flower Type</label>
+                        <input type="text" placeholder="e.g. Tulips" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Color Scheme</label>
+                        <input type="text" placeholder="e.g. Pastel Pink">
+                    </div>
+                    <div class="form-group">
+                        <label>Details</label>
+                        <textarea rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTAINER 6: Contact -->
+    <div id="contact" class="main-container dark-bg">
+        <div class="content-wrapper">
+            <div class="section-title">
+                <h2 style="color:white;">Contact Us</h2>
+            </div>
+            <div class="contact-box">
+                <div class="contact-info">
+                    <p>Email: hello@handmadeblooms.com</p>
+                    <p>Phone: 123-456-7890</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTAINER 7: Footer -->
+    <div id="footer" class="footer-container">
+        <p>© 2025 Handmade Blooms</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+    </div>
+
+    <!-- Connects to the JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
