@@ -1,4 +1,3 @@
-/* --- RESET --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,23 +6,21 @@
 
 html {
     scroll-behavior: smooth;
-    /* Keeps the sticky header from blocking the view when clicking links */
     scroll-padding-top: 70px; 
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #880E4F; /* Deep Pink text for contrast against light background */
+    color: #880E4F;
     line-height: 1.6;
-    background-color: #FFF0F5; /* Lavender Blush - Very light pink background */
+    background-color: #FFF0F5;
 }
 
-/* --- NAVIGATION CONTAINER --- */
 .navbar-container {
-    background-color: #FFC1E3; /* Light Pastel Pink */
+    background-color: #FFC1E3;
     width: 100%;
     z-index: 1000;
-    height: 60px;
+    height: 69px;
     transition: all 0.3s ease;
     box-shadow: 0 2px 10px rgba(255, 182, 193, 0.4);
 }
@@ -39,14 +36,14 @@ body {
 }
 
 .logo {
-    color: #880E4F; /* Deep Pink for logo to stand out on light bar */
+    color: #bb367d; 
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .nav-links a {
-    color: #880E4F; /* Deep Pink links */
+    color: #880E4F;
     text-decoration: none;
     margin-left: 20px;
     transition: color 0.3s;
@@ -54,24 +51,22 @@ body {
 }
 
 .nav-links a:hover {
-    color: #F06292; /* Brighter pink on hover */
+    color: #F06292;
 }
 
 .menu-icon {
-    display: none; /* Hidden on desktop */
+    display: none;
     color: #880E4F;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Sticky Class (Applied by JS) */
 .sticky {
     position: fixed;
     top: 0;
     box-shadow: 0 4px 12px rgba(255, 182, 193, 0.5);
 }
 
-/* --- GENERAL CONTAINER STYLES --- */
 .main-container {
     width: 100%;
     padding: 60px 20px;
@@ -90,23 +85,25 @@ body {
 
 .section-title h2 {
     font-size: 2.5rem;
-    color: #FF80AB; /* Light Accent Pink for headings */
+    color: #FF80AB;
 }
 
-/* Background Colors */
-.white-bg { background-color: #FFFFFF; }
-.pink-bg { background-color: #FFE4E1; } /* Misty Rose - different shade of light pink */
-.dark-bg { background-color: #F8BBD0; color: #880E4F; } /* Soft Pink 100 for contact */
+.section-title p {
+    color: #880E4F;
+    margin-top: 10px;
+}
 
-/* Special rule to ensure contact header is visible on light pink bg */
+.white-bg { background-color: #FFFFFF; }
+.pink-bg { background-color: #FFE4E1; }
+.dark-bg { background-color: #F8BBD0; color: #880E4F; }
+
 #contact h2 {
     color: #880E4F !important;
 }
 
-/* --- HOME / BANNER CONTAINER --- */
 .banner-container {
     padding: 0;
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -121,7 +118,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1; 
-    filter: brightness(0.8) sepia(0.3); /* Warmer filter */
+    filter: brightness(0.8) sepia(0.3);
 }
 
 .banner-text {
@@ -142,10 +139,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* Buttons */
 .btn {
     padding: 12px 30px;
-    background-color: #FF80AB; /* Light Accent Pink */
+    background-color: #FF80AB;
     color: white;
     text-decoration: none;
     border: none;
@@ -158,11 +154,10 @@ body {
 }
 
 .btn:hover { 
-    background-color: #F06292; /* Slightly darker on hover */
+    background-color: #F06292;
     transform: translateY(-2px);
 }
 
-/* --- ABOUT CONTAINER (Split Layout) --- */
 .split-layout {
     display: flex;
     align-items: center;
@@ -173,34 +168,44 @@ body {
     flex: 1;
 }
 
-.text-block p {
-    font-size: 1.1rem;
-    color: #880E4F;
+.text-block h3 {
+    color: #EC407A;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .image-block img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 10px 10px 0 #FFC1E3; /* Pastel pink shadow */
+    box-shadow: 10px 10px 0 #FFC1E3;
 }
 
-/* --- SHOP CONTAINER (Grid) --- */
+.category-header {
+    width: 100%;
+    border-bottom: 2px solid #FFC1E3;
+    padding-bottom: 10px;
+    margin: 40px 0 20px 0;
+    color: #EC407A;
+    font-size: 1.5rem;
+}
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    margin-bottom: 40px;
 }
 
 .card {
     background: white;
-    border-radius: 15px; /* Softer rounded corners */
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(255, 193, 227, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 193, 227, 0.3);
     transition: transform 0.3s;
     border: 1px solid #FFC1E3;
 }
 
-.card:hover { transform: translateY(-15px); }
+.card:hover { transform: translateY(-5px); }
 
 .card-img img {
     width: 100%;
@@ -216,6 +221,7 @@ body {
 .card-body h3 {
     margin-bottom: 5px;
     color: #EC407A;
+    font-size: 1.2rem;
 }
 
 .card-body p {
@@ -233,14 +239,14 @@ body {
     cursor: pointer;
     transition: background 0.2s;
     font-size: 0.9rem;
+    text-decoration: none;
 }
 
 .btn-small:hover {
     background-color: #F06292;
-    text-decoration: underline;
+    color: white;
 }
 
-/* --- CUSTOM FORM CONTAINER --- */
 .form-container {
     max-width: 600px;
     margin: 0 auto;
@@ -255,10 +261,12 @@ body {
     color: #EC407A;
 }
 
-.form-group input, .form-group textarea {
+.form-group input, 
+.form-group textarea, 
+.form-input {
     width: 100%;
     padding: 12px;
-    border: 2px solid #FFC1E3; /* Pastel Pink border */
+    border: 2px solid #FFC1E3;
     border-radius: 8px;
     font-family: inherit;
     transition: border-color 0.3s;
@@ -270,9 +278,8 @@ body {
     border-color: #FF80AB;
 }
 
-/* --- FOOTER CONTAINER --- */
 .footer-container {
-    background-color: #FFC1E3; /* Light Pink */
+    background-color: #FFC1E3;
     color: #880E4F;
     text-align: center;
     padding: 30px;
@@ -293,20 +300,17 @@ body {
     color: #C2185B;
 }
 
-/* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 768px) {
-    /* Show Hamburger Icon */
     .menu-icon { display: block; }
     
-    /* Hide Links initially */
     .nav-links {
         display: none; 
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 69px;
         left: 0;
         width: 100%;
-        background-color: #FFC1E3; /* Match navbar color */
+        background-color: #FFC1E3;
         padding: 20px 0;
         text-align: center;
     }
@@ -317,13 +321,11 @@ body {
         color: #880E4F;
     }
 
-    /* JavaScript toggles this class to show menu */
     .nav-links.active { display: flex; }
 
     .split-layout { flex-direction: column; }
     
     .banner-text h1 { font-size: 2.5rem; }
     
-    /* Ensure padding doesn't push mobile view too far */
     .main-container { padding: 40px 20px; }
 }
