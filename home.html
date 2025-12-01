@@ -4,36 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handmade Blooms</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Nav -->
     <div id="navbar" class="navbar-container">
         <div class="nav-wrapper">
             <div class="logo">Handmade Blooms</div>
+            
             <div class="menu-icon" onclick="toggleMenu()">
                 <span>&#9776;</span>
             </div>
-            
-    <nav id="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Shop</a>
-        <a href="#">Custom Orders</a>
-        <a href="#">Contact</a>
-    </nav>
-            <!-- Nav Links -->
+
             <div class="nav-links" id="navLinks">
                 <a href="#home" onclick="closeMenu()">Home</a>
-                <a href="#about" onclick="closeMenu()">About</a>
-                <a href="#shop" onclick="closeMenu()">Shop</a>
+                <a href="#about" onclick="closeMenu()">About Us</a>
+                <a href="#shop" onclick="closeMenu()">Shop & Gallery</a>
                 <a href="#custom" onclick="closeMenu()">Custom Orders</a>
                 <a href="#contact" onclick="closeMenu()">Contact</a>
             </div>
         </div>
     </div>
-    <!-- Banner -->
+
     <div id="home" class="main-container banner-container">
         <div class="banner-image">
             <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/bg1.jpg?raw=true" alt="Flower Background">
@@ -41,14 +33,14 @@
         <div class="banner-overlay">
             <div class="banner-text">
                 <h1>Handmade Blooms</h1>
-                <p>Eco-Friendly Handcrafted Flowers</p>
+                <p>Everlasting beauty, handcrafted with love.</p>
                 <div class="btn-container">
                     <a href="#shop" class="btn">Shop Collection</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About -->
+
     <div id="about" class="main-container white-bg">
         <div class="content-wrapper">
             <div class="section-title">
@@ -56,34 +48,37 @@
             </div>
             <div class="split-layout">
                 <div class="text-block">
-                    <p>At Handmade Blooms, we believe flowers should last forever. Our fuzzy wire creations are meticulously crafted by hand to bring color to your life without the environmental impact of cut flowers.</p>
+                    <h3>Our Story</h3>
+                    <p>Handmade Blooms was established in 2025 by an independent woman with a deep passion for floral art and creativity. What started as a small hobby of making handcrafted flowers soon grew into a meaningful business that brings joy to others.</p>
+                    <br>
+                    <p>We create eco-friendly, handcrafted flower arrangements made from fuzzy wires. Each design is carefully made by hand to give a personal and creative touch. Perfect for gifts, home decorations, and special events.</p>
                 </div>
                 <div class="image-block">
-                    <img src="img\andrew-small-EfhCUc_fjrU-unsplash.jpg" alt="Crafting">
+                    <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/backup.jpg?raw=true"  alt="Crafting Flowers">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Shop -->
     <div id="shop" class="main-container pink-bg">
         <div class="content-wrapper">
             <div class="section-title">
-                <h2>Shop Now</h2>
+                <h2>Shop & Gallery</h2>
+                <p>Explore our collections</p>
             </div>
+
+            <h3 class="category-header">Handmade Flowers</h3>
             <div class="product-grid">
-                <!-- Card 1 -->
                 <div class="card">
                     <div class="card-img">
                         <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/rose.jpg?raw=true" alt="Rose">
                     </div>
                     <div class="card-body">
-                        <h3>Rose</h3>
+                        <h3>Classic Rose</h3>
                         <p>&#x20B1;150.00</p>
-                        <div class="btn-small">Buy Now</div>
+                        <a href="checkout.html?product=Classic Rose&price=150.00" class="btn-small">Buy Now</a>
                     </div>
                 </div>
-                <!-- Card 2 -->
                 <div class="card">
                     <div class="card-img">
                         <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/sunflower.jpg?raw=true" alt="Sunflower">
@@ -91,72 +86,135 @@
                     <div class="card-body">
                         <h3>Sunflower</h3>
                         <p>&#x20B1;180.00</p>
-                        <div class="btn-small">Buy Now</div>
+                        <a href="checkout.html?product=Sunflower&price=180.00" class="btn-small">Buy Now</a>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="card">
+                 <div class="card">
                     <div class="card-img">
                         <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/daisy.jpg?raw=true" alt="Daisy">
                     </div>
                     <div class="card-body">
                         <h3>Daisy</h3>
                         <p>&#x20B1;180.00</p>
-                        <div class="btn-small">Buy Now</div>
+                        <a href="checkout.html?product=Daisy&price=180.00" class="btn-small">Buy Now</a>
                     </div>
                 </div>
             </div>
+
+            <h3 class="category-header">Bouquets & Gift Sets</h3>
+            <div class="product-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/Boquet.jpg?raw=true" alt="Bouquet">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mixed Bouquet</h3>
+                        <p>&#x20B1;550.00</p>
+                        <a href="checkout.html?product=Mixed Bouquet&price=550.00" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/giftset.jpg?raw=true" alt="Gift Set">
+                    </div>
+                    <div class="card-body">
+                        <h3>Premium Gift Box</h3>
+                        <p>&#x20B1;800.00</p>
+                        <a href="checkout.html?product=Premium Gift Box&price=800.00" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-header">Hair Clips & Personalized Crafts</h3>
+            <div class="product-grid">
+                 <div class="card">
+                    <div class="card-img">
+                        <img src="https://github.com/PoypiAsh/Hand-Made-Blooms/blob/main/images/Hairclip.jpg?raw=true" alt="Hair Clip">
+                    </div>
+                    <div class="card-body">
+                        <h3>Floral Hair Clip</h3>
+                        <p>&#x20B1;80.00</p>
+                        <a href="checkout.html?product=Floral Hair Clip&price=80.00" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Custom Orders -->
+
     <div id="custom" class="main-container white-bg">
         <div class="content-wrapper">
             <div class="section-title">
                 <h2>Custom Orders</h2>
-                <p>Build your own bouquet</p>
+                <p>Have a specific color palette or flower type in mind? Let's build your dream bouquet!</p>
             </div>
             <div class="form-container">
-                <form onsubmit="event.preventDefault(); alert('Request sent!');">
+                <form onsubmit="event.preventDefault(); alert('Request sent! We will contact you shortly.');">
                     <div class="form-group">
-                        <label>Flower Type</label>
-                        <input type="text" placeholder="e.g. Tulips" required>
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Full Name" required>
                     </div>
                     <div class="form-group">
-                        <label>Color Scheme</label>
-                        <input type="text" placeholder="e.g. Pastel Pink">
+                        <label>Contact Number</label>
+                        <input type="tel" placeholder="09XX-XXX-XXXX" required>
                     </div>
                     <div class="form-group">
-                        <label>Details</label>
-                        <textarea rows="4" required></textarea>
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@example.com" required>
                     </div>
-                    <button type="submit" class="btn">Submit Request</button>
+                    <div class="form-group">
+                        <label>Flower Type Preference</label>
+                        <input type="text" placeholder="e.g. Blue Roses, Pink Tulips" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Occasion</label>
+                        <select class="form-input">
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                            <option>Decoration</option>
+                            <option>Gift</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Details</label>
+                        <textarea rows="4" placeholder="Describe your vision..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Request Quote</button>
                 </form>
             </div>
         </div>
     </div>
-    <!-- Contact -->
+
     <div id="contact" class="main-container dark-bg">
         <div class="content-wrapper">
             <div class="section-title">
-                <h2 style="color:white;">Contact Us</h2>
+                <h2 style="color:white !important;">Contact Us</h2>
             </div>
             <div class="contact-box">
                 <div class="contact-info">
-                    <p>Email: hello@handmadeblooms.com</p>
-                    <p>Phone: 123-456-7890</p>
+                    <center>
+                    <p><strong>Email:</strong> handmadeblooms@gmail.com</p>
+                    <p><strong>Phone:</strong> 0912-345-6789</p>
+                    <p><strong>Location:</strong> Binangonan, Rizal</p>
+                    </center>
+                    <div class="other-services">
+                        <center>
+                        <h3 style="color:#ffffff; margin-top:20px;">Other Services</h3>
+                        <p>Event Styling • Bulk Orders • Souvenirs</p>
+                        </center>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
+
     <div id="footer" class="footer-container">
-        <p>© 2025 Handmade Blooms</p>
+        <p>© 2025 Handmade Blooms | Created by BSIT 2-2B Group</p>
         <div class="social-links">
-            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            <a href="https://www.facebook.com/share/1C2rVfHMMa/?mibextid=wwXIfr">Facebook</a> | <a href="https://www.instagram.com/__handmadeblooms?igsh=Y2ExeTU5MnExdGc=">Instagram</a>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
